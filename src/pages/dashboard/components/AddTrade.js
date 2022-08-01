@@ -106,7 +106,7 @@ function AddTrade({handleUpdate}) {
                 style={{width:'190px'}}
                 my="xs"
                 label="Buy Price"
-                defaultValue={0}
+                defaultValue={'₹'}
                 parser={(value) => value.replace(/\$\s?|(,*)/g, '')}
                 formatter={(value) =>
                     !Number.isNaN(parseFloat(value))
@@ -119,7 +119,7 @@ function AddTrade({handleUpdate}) {
              <NumberInput
                 style={{width:'190px'}}
                 my="xs"
-                label="Quntity"
+                label="Quantity"
                 min="1"
                 defaultValue={1}
                 parser={(value) => value.replace(/\$\s?|(,*)/g, '')}

@@ -33,7 +33,8 @@ function WinRatio() {
 	  
     })
     const p = (win/da.length)*100;
-    setWin(p)
+    const n= p.toFixed(1);
+    setWin(n)
 
   }
   useEffect(() => {

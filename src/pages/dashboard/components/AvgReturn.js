@@ -47,7 +47,7 @@ function AvgReturn() {
      setDatas(da2);
      var p = ((totR/da2.length)-f)/100;
      setAvP(p)
-      setAv(totR/da2.length)
+      setAv((totR/da2.length).toFixed(2))
 
   }
   useEffect(() => {
